@@ -78,7 +78,7 @@ const Portfolio = () => {
             cybersecurity while contributing positively to the field.
           </p>
 
-          <h2 style={{ textAlign: "center" }}>About Me</h2>
+          <h2 style={{ textAlign: "center" }}>My socials</h2>
 
           {/* Button container for social links and project buttons */}
           <div className="button-container">
