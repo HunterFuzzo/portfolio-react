@@ -1,12 +1,15 @@
 /** @format */
 
 import * as Assets from "./config/assets.js";
+import React from "react";
+import { useEffect, useState } from "react";
+import ReactDOM from "react-dom";
 
 const Portfolio = () => {
-  const githubChartURL = "https://ghchart.rshah.org/43265c/k-3st3ban";
-  const [init, setInit] = Assets.useState(false);
+  const githubChartURL = "https://ghchart.rshah.org/43265c/hunterfuzzo";
+  const [init, setInit] = useState(false);
 
-  Assets.useEffect(() => {
+  useEffect(() => {
     Assets.initParticlesEngine(async (engine) => {
       await Assets.loadSlim(engine);
       //await loadBasic(engine);
@@ -611,4 +614,4 @@ const Portfolio = () => {
 };
 
 // Render the JSX component to the DOM
-Assets.ReactDOM.render(<Portfolio />, document.getElementById("root"));
+ReactDOM.render(<Portfolio />, document.getElementById("root"));

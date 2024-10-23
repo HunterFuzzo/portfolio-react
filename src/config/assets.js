@@ -38,6 +38,4 @@ export { default as useParticlesOptions } from "./particlesOptions.js";
 
 export { default as style } from "../index.css";
 
-export { React, useEffect, useState } from "react";
-export { default as ReactDOM } from "react-dom";
 export { default as particlesLoaded } from "./particlesLoaded.js";
