@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/static/css/main.25011a28.css",
-    "main.js": "/static/js/main.6b432301.js",
+    "main.js": "/static/js/main.fc070e90.js",
     "static/media/giec-screen.png": "/static/media/giec-screen.b5997408855c18bdd5b0.png",
     "static/media/quiz-screen.png": "/static/media/quiz-screen.c1a639e23511af6d6927.png",
     "static/media/resume.pdf": "/static/media/resume.2d974141c732c50fd149.pdf",
@@ -10,6 +10,7 @@
     "static/media/discordbot.png": "/static/media/discordbot.f63556773f78c084a53b.png",
     "static/media/metasploit.png": "/static/media/metasploit.c844d80c4e8b82a7c0c4.png",
     "static/media/thm.png": "/static/media/thm.4d5df3e8f3daf6da0c37.png",
+    "static/media/3w.webp": "/static/media/3w.4b98186396cf96004e3e.webp",
     "static/media/pp.gif": "/static/media/pp.5f383ec1eb7447ec96e5.gif",
     "static/media/nmap.png": "/static/media/nmap.38097efc93b9f40f511f.png",
     "static/media/react.svg": "/static/media/react.9920128e901fa8bc542a4920f3355da2.svg",
@@ -24,12 +25,13 @@
     "static/media/nodejs.svg": "/static/media/nodejs.a617ba6cfd5ebfa1fbd63e90da563007.svg",
     "static/media/external-link.svg": "/static/media/external-link.c648a072849bf4ad6f122da6e0d86f2f.svg",
     "static/media/database.svg": "/static/media/database.bfaae063eefee8b4c3a2e550dc11bbd8.svg",
+    "static/media/cpp.svg": "/static/media/cpp.6070543dd84582715b09ee951e81f4cf.svg",
     "index.html": "/index.html",
     "main.25011a28.css.map": "/static/css/main.25011a28.css.map",
-    "main.6b432301.js.map": "/static/js/main.6b432301.js.map"
+    "main.fc070e90.js.map": "/static/js/main.fc070e90.js.map"
   },
   "entrypoints": [
     "static/css/main.25011a28.css",
-    "static/js/main.6b432301.js"
+    "static/js/main.fc070e90.js"
   ]
 }
