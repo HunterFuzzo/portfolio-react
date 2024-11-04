@@ -1,10 +1,10 @@
 {
   "files": {
     "main.css": "/static/css/main.25011a28.css",
-    "main.js": "/static/js/main.fc070e90.js",
+    "main.js": "/static/js/main.90419196.js",
     "static/media/giec-screen.png": "/static/media/giec-screen.b5997408855c18bdd5b0.png",
     "static/media/quiz-screen.png": "/static/media/quiz-screen.c1a639e23511af6d6927.png",
-    "static/media/resume.pdf": "/static/media/resume.2d974141c732c50fd149.pdf",
+    "static/media/resume.pdf": "/static/media/resume.c727924c9b2be5ee3883.pdf",
     "static/media/admin-screen.png": "/static/media/admin-screen.9650be04ab3468c2643c.png",
     "static/media/fivem.png": "/static/media/fivem.cb7e9db5c728f7c9ba3d.png",
     "static/media/discordbot.png": "/static/media/discordbot.f63556773f78c084a53b.png",
@@ -28,10 +28,10 @@
     "static/media/cpp.svg": "/static/media/cpp.6070543dd84582715b09ee951e81f4cf.svg",
     "index.html": "/index.html",
     "main.25011a28.css.map": "/static/css/main.25011a28.css.map",
-    "main.fc070e90.js.map": "/static/js/main.fc070e90.js.map"
+    "main.90419196.js.map": "/static/js/main.90419196.js.map"
   },
   "entrypoints": [
     "static/css/main.25011a28.css",
-    "static/js/main.fc070e90.js"
+    "static/js/main.90419196.js"
   ]
 }
