@@ -584,6 +584,105 @@ const Portfolio = () => {
             </div>
           </div>
 
+          <div className="projects">
+            <div
+              className="projectFrame"
+              style={{ display: "flex", alignItems: "flex-start" }}>
+              <div
+                style={{
+                  display: "flex",
+                  flexDirection: "column",
+                  justifyContent: "space-between",
+                  height: "100%",
+                }}>
+                <div>
+                  <div
+                    className="projectText"
+                    style={{ maxWidth: "500px", fontSize: "18px" }}>
+                    World Wide Watchers project for CESI School
+                  </div>
+                  <div
+                    style={{
+                      marginTop: "10px",
+                      textTransform: "none",
+                      fontSize: "12px",
+                      maxWidth: "500px",
+                    }}>
+                    Welcome to the 3W project. As an early developer, I have
+                    worked on several projects, including an Arduino-based
+                    project for CESI (my school) using C++. This project
+                    involves programming microcontrollers to manage various
+                    tasks, such as sensor data collection, automated responses,
+                    and system monitoring. It showcases my skills in embedded
+                    programming and hardware interaction, allowing for a deeper
+                    understanding of electronics and real-time processing.
+                  </div>
+                </div>
+
+                <div
+                  style={{ display: "flex", gap: "10px", marginTop: "10px" }}>
+                  <a
+                    href="https://github.com/HunterFuzzo/3w-project"
+                    target="_blank"
+                    rel="noreferrer">
+                    <button
+                      className="navbutton2"
+                      style={{ display: "flex", alignItems: "center" }}>
+                      <img
+                        src={Assets.github}
+                        alt="github"
+                        style={{
+                          width: "20px",
+                          height: "20px",
+                          margin: "0px 10px 0px 0px",
+                        }}
+                      />
+                      Repository
+                    </button>
+                  </a>
+
+                  <div
+                    style={{
+                      display: "flex",
+                      alignItems: "center",
+                      gap: "10px",
+                    }}>
+                    <a
+                      href="https://azukas-organization.gitbook.io/3w"
+                      target="_blank"
+                      rel="noreferrer">
+                      <button
+                        className="navbutton2"
+                        style={{ display: "flex", alignItems: "center" }}>
+                        <img
+                          src={Assets.externalLink}
+                          alt="Video"
+                          style={{
+                            width: "20px",
+                            height: "20px",
+                            margin: "0px 10px 0px 0px",
+                          }}
+                        />
+                        Documentation
+                      </button>
+                    </a>
+                    <img
+                      src={Assets.cpp}
+                      alt=""
+                      style={{ width: "25px", height: "25px" }}></img>
+                  </div>
+                </div>
+              </div>
+              <div style={{ flexGrow: 1 }}></div>
+              <div>
+                <img
+                  src={Assets.troisw}
+                  alt=""
+                  style={{ height: "200px", width: "230px" }}></img>
+              </div>
+            </div>
+          </div>
+
           <div
             style={{
               display: "flex",

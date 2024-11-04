@@ -19,6 +19,7 @@ export { default as html } from "../assets/html.svg"; // Changed to "../"
 export { default as css } from "../assets/css.svg"; // Changed to "../"
 export { default as nodejs } from "../assets/nodejs.svg"; // Changed to "../"
 export { default as javascript } from "../assets/javascript.svg"; // Changed to "../"
+export { default as cpp } from "../assets/cpp.svg"; // Changed to "../"
 
 // Images
 export { default as fivem } from "../assets/fivem.png"; // Changed to "../"
@@ -30,6 +31,7 @@ export { default as giec } from "../assets/giec-screen.png"; // Changed to "../"
 export { default as quizScreen } from "../assets/quiz-screen.png"; // Changed to "../"
 export { default as adminScreen } from "../assets/admin-screen.png"; // Changed to "../"
 export { default as discordBot } from "../assets/discordbot.png"; // Changed to "../"
+export { default as troisw } from "../assets/3w.webp"; // Changed to "../"
 
 // Documents
 export { default as resume } from "../assets/resume.pdf"; // Changed to "../"
