@@ -227,20 +227,27 @@ button:hover {
 /* Media Queries pour les écrans plus petits */
 @media screen and (max-width: 768px) {
   header {
-    flex-direction: column; /* Les blocs passent l'un en dessous de l'autre */
+    flex-direction: column;
+    min-height: 100%;
+    height: auto;
+    width: 100vw;
+    overflow-x: hidden;
   }
   
-  button {
-    width: 98%; /* Les boutons prennent toute la largeur */
-    margin-bottom: 20px; /* Espace entre les boutons sur les petits écrans */
+  .logoButton {
+    width: 150%;
+    height: 100px;
+    padding: 15px 30px;
+    margin: 0 auto;
+    transform: translateX(-17%);
   }
 
   .header {
-    flex: 1 1 100%; /* Les blocs prennent 100% de la largeur */
-    text-align: center; /* Centrer le texte */
+    flex: 1 1 100%;
+    text-align: center;
   }
 
   .header h1 {
-    font-size: 48px; /* Taille de police ajustée pour les petits écrans */
+    font-size: 48px;
   }
 }

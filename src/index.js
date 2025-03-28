@@ -8,6 +8,7 @@ import ReactDOM from "react-dom";
 const Portfolio = () => {
   const githubChartURL = "https://ghchart.rshah.org/43265c/hunterfuzzo";
   const [init, setInit] = useState(false);
+  const [windowWidth, setWindowWidth] = useState(window.innerWidth);
 
   useEffect(() => {
     Assets.initParticlesEngine(async (engine) => {
@@ -18,8 +19,15 @@ const Portfolio = () => {
     });
   }, []);
 
+  useEffect(() => {
+    const handleResize = () => setWindowWidth(window.innerWidth);
+    window.addEventListener("resize", handleResize);
+    return () => window.removeEventListener("resize", handleResize);
+  }, []);
+
   const particlesLoaded = Assets.particlesLoaded();
   const options = Assets.useParticlesOptions();
+  const isMobile = windowWidth <= 768;
 
   if (init) {
     return (
@@ -34,16 +42,19 @@ const Portfolio = () => {
             style={{ display: "flex" }}>
             <h1 style={{ display: "flex", flexDirection: "row" }}>
               Azuka{" "}
-              <img
-                src={Assets.pp}
-                alt="pp"
-                style={{
-                  width: "80px",
-                  height: "80px",
-                  margin: "10px 0px 0px 10px",
-                  borderRadius: "50%",
-                }}
-              />
+              {!isMobile && (
+                <img
+                  src={Assets.pp}
+                  alt="pp"
+                  className="profile-image"
+                  style={{
+                    width: "80px",
+                    height: "80px",
+                    margin: "10px 0px 0px 10px",
+                    borderRadius: "50%",
+                  }}
+                />
+              )}
             </h1>
             <a
               href={Assets.resume}
@@ -271,10 +282,13 @@ const Portfolio = () => {
               </div>
               <div style={{ flexGrow: 1 }}></div>
               <div>
-                <img
-                  src={Assets.giec}
-                  alt=""
-                  style={{ height: "200px", width: "310px" }}></img>
+                {!isMobile && (
+                  <img
+                    src={Assets.giec}
+                    alt=""
+                    style={{ height: "200px", width: "310px" }}
+                  />
+                )}
               </div>
             </div>
           </div>
@@ -376,10 +390,13 @@ const Portfolio = () => {
               </div>
               <div style={{ flexGrow: 1 }}></div>
               <div>
-                <img
-                  src={Assets.quizScreen}
-                  alt=""
-                  style={{ height: "200px", width: "310px" }}></img>
+                {!isMobile && (
+                  <img
+                    src={Assets.quizScreen}
+                    alt=""
+                    style={{ height: "200px", width: "310px" }}
+                  />
+                )}
               </div>
             </div>
           </div>
@@ -476,10 +493,13 @@ const Portfolio = () => {
               </div>
               <div style={{ flexGrow: 1 }}></div>
               <div>
-                <img
-                  src={Assets.adminScreen}
-                  alt=""
-                  style={{ height: "200px", width: "290px" }}></img>
+                {!isMobile && (
+                  <img
+                    src={Assets.adminScreen}
+                    alt=""
+                    style={{ height: "200px", width: "290px" }}
+                  />
+                )}
               </div>
             </div>
           </div>
@@ -576,10 +596,13 @@ const Portfolio = () => {
               </div>
               <div style={{ flexGrow: 1 }}></div>
               <div>
-                <img
-                  src={Assets.discordBot}
-                  alt=""
-                  style={{ height: "200px", width: "230px" }}></img>
+                {!isMobile && (
+                  <img
+                    src={Assets.discordBot}
+                    alt=""
+                    style={{ height: "200px", width: "230px" }}
+                  />
+                )}
               </div>
             </div>
           </div>
@@ -675,10 +698,14 @@ const Portfolio = () => {
               </div>
               <div style={{ flexGrow: 1 }}></div>
               <div>
-                <img
-                  src={Assets.troisw}
-                  alt=""
-                  style={{ height: "200px", width: "230px" }}></img>
+                {!isMobile && (
+                  <img
+                    src={Assets.troisw}
+                    alt=""
+                    className="project-image"
+                    style={{ height: "200px", width: "230px" }}
+                  />
+                )}
               </div>
             </div>
           </div>
@@ -702,11 +729,13 @@ const Portfolio = () => {
           </div>
           <h3>Copyright © 2024 Azuka</h3>
         </div>
-        <Assets.Particles
-          id="tsparticles"
-          particlesLoaded={particlesLoaded}
-          options={options}
-        />
+        {!isMobile && (
+          <Assets.Particles
+            id="tsparticles"
+            particlesLoaded={particlesLoaded}
+            options={options}
+          />
+        )}
       </header>
     );
   }
