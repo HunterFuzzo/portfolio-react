@@ -76,7 +76,7 @@ const Portfolio = () => {
           <h2>DEVELOPER / PENSTESTER</h2>
           <p>
             Hello, my name is Dylan Rafiliposon, born on July 4, 2005, I am
-            currently 19 years old. I am pursuing a five-year integrated
+            currently 20 years old. I am pursuing a five-year integrated
             engineering program at CESI Nice, specializing in cybersecurity, and
             I am eager to focus on network security testing (Pentester). I have
             a strong background in software development, having worked on
